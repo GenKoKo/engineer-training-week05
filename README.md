@@ -52,11 +52,24 @@ select count(*) from user;
 
 ### Q3 command 4
 
+#### After fixing
+
+```sql
+select * from user order by time DESC limit 1,3;
+```
+
+![](image/README/1616808463971.png)
+
+
+#### before fixing
+
 ```sql
 select * from user where id between 2 and 4 order by time DESC;
 ```
 
 ![](image/README/1616759111802.png)
+
+
 
 ### Q3 command 5
 
@@ -127,3 +140,14 @@ on user.username = 'ply' and user.id = message.user_id;
 ```
 
 ![](image/README/1616765600021.png)
+
+
+## Reference:
+
+### DB export by mysqldump command line
+
+[(1) MySQL Export Database using Command Line (mysqldump) - YouTube](https://www.youtube.com/watch?v=ixdhZjDEzec)
+
+### DB import by mysql command line
+
+[(1) MySQL Import Database using Command Line - YouTube](https://www.youtube.com/watch?v=gvcBDA2wJJ4)
